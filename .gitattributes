@@ -1,0 +1,11 @@
+# Set default behavior, in case users don't have core.autocrlf set.
+* text=auto
+
+# Text files which should always have line endings normalized.
+*.css   text
+*.html  text
+*.js    text
+*.php   text
+
+# Binary files which should not be modified.
+*.png  binary
