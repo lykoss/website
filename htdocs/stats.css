@@ -1,0 +1,34 @@
+/* CSS file for /stats/ - attempt to make the website look a little more like 2013 */
+
+body {
+    background-color: #dedede;
+}
+
+td {
+    border-radius: 1px;
+}
+
+td.headlinebg {
+    border-radius: 2px;
+}
+
+td.headtext {
+    background: #777777;
+    border-radius: 1px;
+}
+
+td.tdtop {
+    background: #cccccc;
+}
+
+td[style*="background-color: #"] { /* Most active nicks has inline style="" attributes. */
+    background: #bbbbbb;
+}
+
+td.hicell {
+    background: #bbbbbb;
+}
+
+td > img[alt=""] { /* Most active nicks by hours alignment fix */
+    vertical-align: middle;
+}
