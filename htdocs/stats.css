@@ -22,7 +22,7 @@ td.tdtop {
 }
 
 td[style*="background-color: #"] { /* Most active nicks has inline style="" attributes. */
-    background: #bbbbbb;
+    background: #bbbbbb !important;
 }
 
 td.hicell {
