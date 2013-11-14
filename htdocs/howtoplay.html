@@ -3,14 +3,14 @@
     <head>
       	<meta charset="UTF-8" />
       	<title>How to play ##werewolf on freenode</title>
-      	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="bootstrap.css">
+      	<link rel="stylesheet" href="main.css">
   	</head>
   	<body style="padding-top:60px;">
       	<div class="container">
           	<div class="navbar navbar-inverse navbar-fixed-top">
               	<div class="container">
-                  	<a class="navbar-brand" href="/index">Home</a> | <a class="navbar-brand" href="/ops">List of ops</a>
+                  	<a class="navbar-brand" href="/index">Home</a> <a class="navbar-brand" href="/ops">List of ops</a>
               	</div>
           	</div>
             <h1>Introduction</h1>
@@ -20,6 +20,14 @@
             <p>When a majority has been reached, the target is killed and the village is informed of their actual role. The game enters another night phase if there are werewolves remaining. The game ends if all wolves have been killed or if the wolves outnumber the remaining villagers.</p>
             <h2>Roles</h2>
             <p>After the game is started, the Werewolf bot (lykos) will choose a random set of players and assign them roles. Not everyone has a role, so if you don't get a PM, sit back and wait for day.</p>
+            <h3>Safe Roles</h3>
+            <li>Seer (4-players) &mdash; The seer is a role that is always present. He or she is the most basic role and has the ability to "see" the role of a player. However, the cursed villager will appear to be a wolf and the traitor will appear to be a villager. Seer should reveal in 4-player games, and if the seer sees someone as a villager in a 6-player game, then that villager should reveal as seer safe. Beyond 8-player games, the seer(safe) should not reveal and the harlot should reveal.</li>
+            <li>Cursed Villager (6-players) &mdash; The cursed villager is a normal villager, that appears to be a wolf to the seer. No safe can be a cursed villager, however, the traitor can also be the cursed villager. Beyond that there are no special roles. A second cursed villager will appear at 18 players. </li>
+            <li>Village Drunk (8-players) &mdash; The village drunk has no powers, save being the sole drunk person in the game. As such, if the harlot dies, the drunk should reveal in channel. </li>
+            <li>Harlot (8-players) &mdash; The harlot can escape attack by "visiting" another player each night. Because they die if they visit a Werewolf, the Harlot can, like the Seer, prove players to be safe - but at the risk of their own life. The harlot will also die if they visit the victim of the Werewolves.</li>
+            <li>Gunner (10-players) &mdash; The gunner has the ability to "shoot" other players with silver bullets (of which they have a limited amount, 2 bullets if not drunk, 6 if drunk.) during the day. A shot werewolf will die and a shot villager will be unable to vote for the remainder of the day. There is also, however, a chance that the Gunner will miss, kill the villager, or kill themselves. If the werewolf kills the gunner, then the werewolf becomes the gunner and there is a chance that a single bullet will be fired at night. However, a wolf-gunner can not kill another wolf with the gun. Killing another wolf is the easiest way to show that you are a safe. </li>
+            <li>Detective (12-players) &mdash; The detective's role is an investigative one, like the seer's, but it is used during the day. The detective has the advantage of being able to detect the true roles of the traitor and cursed V\villager, however, they risk the chance of revealing themselves to the werewolves. This is why the guardian angel almost always guards the detective as the werewolves often target the detective. </li>
+            <li>Guardian Angel (17-players) &mdash; The Guardian Angel is roughly the opposite of the Harlot; rather than escaping attack, they protect other players. guardian angels can still be killed by Werewolves in the normal way as well as having a 50% chance of dying if they choose to guard a werewolf. Their true identity will not be revealed to the person that is guarding them, and as they have a chance of living even if they guard a wolf, it is futile to claim to be "guardian angle safe" and most always the one the claims that is a wolf. </li>
             <h3>Werewolf roles</h3>
             <p>There are three different werewolf roles that are assigned based on the player count. They are as follows:</p>
             <ul>
@@ -31,9 +39,12 @@
                     <li>20 players &mdash; fourth wolf</li>
                 </ul>
                 At night, the wolves can communicate with each other through the wolfchat and decide who they are going to target. The night ends when all wolves agree on one target; otherwise, the target with most votes is targeted.</li>
-                <li>Traitor &mdash; The traitor is a werewolf role that appears in games with 8 players or more. The traitor has an important role in that they appear to be a normal villager until all other werewolves have died. This ensures "half-safes" aren't completely safe as they could be a traitor. Whereas the seer (see below) sees the traitor as a villager, the traitor can still be cursed (see below) and therefore be seen as wolf. Also, the detective (see below) can ID the true role of a traitor.</li>
-                <li>Werecrow &mdash; The werecrow is basically a normal wolf, but they can also choose to "observe" during nighttime. This means they will turn into a crow and observe a chosen target. When the night ends, the werecrow is informed of whether the target was sleeping, or if they were out from bed, which means they have a nightrole. However, note that werecrow can observe OR kill, which means that they should usually kill instead of observe if all wolves are dead. A werecrow is seen as a wolf to the seer. There werecrow appears in games with 12 players or more.</li>
+                <li>Traitor (8-players) &mdash; The traitor is a werewolf role that appears in games with 8 players or more. The traitor has an important role in that they appear to be a normal villager until all other werewolves have died. This ensures "half-safes" aren't completely safe as they could be a traitor. Whereas the seer (see above) sees the traitor as a villager, the traitor can still be cursed (see above) and therefore be seen as wolf. Also, the detective (see above) can ID the true role of a traitor.</li>
+                <li>Werecrow (12-players) &mdash; The werecrow is basically a normal wolf, but they can also choose to "observe" during nighttime. This means they will turn into a crow and observe a chosen target. When the night ends, the werecrow is informed of whether the target was sleeping, or if they were out from bed, which means they have a nightrole. However, note that werecrow can observe OR kill, which means that they shoul kill instead of observe if all wolves are dead. Once the make their decision, there is no turning back. A werecrow is seen as a wolf to the seer.</li>
             </ul>
+            <div class="container">
+                <p class="text-muted credit"><a href="https://github.com/werewolfirc/website/commits/master/htdocs/ops.html">Last updated</a> at 17:24 on Thu, Nov 14, 2013 UTC</p>
+            </div>
 			  </div>
     </body>
 </html>
