@@ -14,28 +14,40 @@
       </div>
     </div>
     <h1>Introduction</h1>
-    <p>Werewolf is an IRC game based on the Mafia party game. Roles are randomly distributed to the players at the beginning of the game. There are two teams: The werewolves and the villagers, both of whom attempt to kill each other. The game ends when the villagers have found all wolves or when the werewolves equal or outnumber the number of alive villagers.</p>
-    <p>Whereas the werewolves are aware of their fellows, the villagers are unaware of others' roles and must figure out these either by guessing or through the use of special roles. The werewolves can communicate through the bot (commonly referred to as the "wolfchat").</p>
-    <p>The game follows a cycle of two phases: night and day. The game starts with a night, which lasts up to 2 minutes or when all night specials have acted. During the night, the werewolves pick a victim, and the other special roles use their abilities. When nighttime ends, the village is informed of the victim and other deaths. Day lasts up to 12 minutes, or when a majority votes to lynch one player. Day is also when the detective role and the gunner can use their special abilities.</p>
-    <p>When a majority has been reached, the target is killed and the village is informed of their actual role. The game enters another night phase if there are werewolves remaining. The game ends if all wolves have been killed or if the wolves outnumber the remaining villagers.</p>
+    <p>Werewolf is an IRC game based on the Mafia party game. Roles are randomly distributed to the players at the beginning of the game. There are two teams: The werewolves and the villagers, both of whom attempt to kill each other. The game ends when 
+the villagers have found all wolves or when the werewolves equal or outnumber the number of alive villagers.</p>
+    <p>Whereas the werewolves are aware of their fellows, the villagers are unaware of others' roles and must figure out these either by guessing or through the use of special roles. The werewolves can communicate through the bot (commonly referred to as 
+the "wolfchat").</p>
+    <p>The game follows a cycle of two phases: night and day. The game starts with a night, which lasts up to 2 minutes or when all night specials have acted. During the night, the werewolves pick a victim, and the other special roles use their abilities. 
+When nighttime ends, the village is informed of the victim and other deaths. Day lasts up to 12 minutes, or when a majority votes to lynch one player. Day is also when the detective role and the gunner can use their special abilities.</p>
+    <p>When a majority has been reached, the target is killed and the village is informed of their actual role. The game enters another night phase if there are werewolves remaining. The game ends if all wolves have been killed or if the wolves outnumber 
+the remaining villagers.</p>
     <h2>Roles</h2>
     <p>After the game is started, the Werewolf bot (lykos) will choose a random set of players and assign them roles. Not everyone has a role, so if you don't get a PM, sit back and wait for day.</p>
-    <h3>Safe Roles</h3>
+    <h3>Safe roles</h3>
     <dl class="compact long wsp">
-      <dt>Seer (4-players)</dt>
-      <dd>The seer is a role that is always present. He or she is the most basic role and has the ability to "see" the role of a player. However, the cursed villager will appear to be a wolf and the traitor will appear to be a villager. Seer should reveal in 4-player games, and if the seer sees someone as a villager in a 6-player game, then that villager should reveal as seer safe. Beyond 8-player games, the seer(safe) should not reveal and the harlot should reveal.</dd>
-      <dt>Cursed Villager (6-players)</dt>
-      <dd>The cursed villager is a normal villager, that appears to be a wolf to the seer. Anyone who is not a wolf or werecrow (i.e. villagers and the traitor) can be the cursed. Beyond that there are no special roles. A second cursed villager will appear at 18 players.</dd>
-      <dt>Village Drunk (8-players)</dt>
-      <dd>The village drunk has no powers, save being the sole drunk person in the game. As such, if the harlot dies, the drunk should reveal in channel.</dd>
-      <dt>Harlot (8-players)</dt>
-      <dd>The harlot can escape attack by "visiting" another player each night. Because they die if they visit a Werewolf, the Harlot can, like the Seer, prove players to be safe - but at the risk of their own life. The harlot will also die if they visit the victim of the Werewolves.</dd>
-      <dt>Gunner (10-players)</dt>
-      <dd>The gunner has the ability to "shoot" other players with silver bullets (of which they have a limited amount, 2 bullets if not drunk, 6 if drunk.) during the day. A shot werewolf will die and a shot villager will be unable to vote for the remainder of the day. There is also, however, a chance that the Gunner will miss, kill the villager, or kill themselves. If the werewolf kills the gunner, then the werewolf becomes the gunner and there is a chance that a single bullet will be fired at night. However, a wolf-gunner can not kill another wolf with the gun. Killing another wolf is the easiest way to show that you are a safe.</dd>
-      <dt>Detective (12-players)</dt>
-      <dd>The detective's role is an investigative one, like the seer's, but it is used during the day. The detective has the advantage of being able to detect the true roles of the traitor and cursed V\villager, however, they risk the chance of revealing themselves to the werewolves. This is why the guardian angel almost always guards the detective as the werewolves often target the detective.</dd>
-      <dt>Guardian Angel (17-players)</dt>
-      <dd>The Guardian Angel is roughly the opposite of the Harlot; rather than escaping attack, they protect other players. Guardian angels can still be killed by Werewolves in the normal way as well as having a 50% chance of dying if they choose to guard a werewolf. Their true identity will not be revealed to the person that is guarding them, and as they have a chance of living even if they guard a wolf, it is futile to claim to be "guardian angle safe" and most always the one the claims that is a wolf.</dd>
+      <dt>Seer (4 players)</dt>
+      <dd>The seer is a role present in every game. They are the most basic role and has the ability to "see" the role of another player. However, the cursed villager will appear to be a wolf and the traitor will appear to be a villager. Seer should reveal 
+in 4-player games, and if the seer sees someone as a villager in a 6-player game, then that villager should reveal as seer safe. In games with 8 or more players, the seer should stay hidden and another safe should reveal instead.</dd>
+      <dt>Cursed villager (6/18 players)</dt>
+      <dd>The cursed villager is a normal villager who appears as a wolf to the seer. Anyone who is not a wolf or werecrow (i.e. villagers and the traitor) can be the cursed. The cursed villager has no other function beyond this. A second cursed villager will 
+appear in games with 18 players or more.</dd>
+      <dt>Village drunk (8 players)</dt>
+      <dd>The village drunk has no special powers, save being the sole drunk person in the game. As such, it can be assumed that the only drunk claim is the real drunk and therefore a safe.</dd>
+      <dt>Harlot (8 players)</dt>
+      <dd>The harlot can escape a wolf attack by visiting another player each night. As the harlot dies if they visit a Werewolf, the harlot can prove players to not be Werewolves by visiting them. However, the harlot also dies if they visit the victim of the Werewolves.
+      In most cases, the harlot should be the public safe, as the wolves cannot directly kill them.</dd>
+      <dt>Gunner (10 players)</dt>
+      <dd>The gunner has the ability to shoot other players with silver bullets during daytime. The gunner usually has two bullets (three in large games), but village drunk-gunners have six. If the gunner shoots a werewolf, it will die.
+      If the gunner shoots an innocent villager, the villager will be unable to vote that day and will also count towards the player tally. This means that the gunner should refrain from shooting if there is only one more villager than werewolves.
+      There is also a small chance that the gunner accidentally headshots a villager, killing them; or accidentally kills themselves by exploding.
+      If the wolves kill the gunner, they can steal one bullet from them and use it against the village. However, a wolf-gunner cannot kill another wolf, which means that a gunner who successfully kills a werewolf is always fullsafe.</dd>
+      <dt>Detective (12 players)</dt>
+      <dd>The detective's role in the game is to investigate players during the day. Compared to the seer, the detective has the advantage of being able to detect the true roles of the traitor and cursed V\villager; however, they risk (2/5 chance) revealing 
+themselves to the werewolves every time they investigate someone. The detective is an important asset to the village, which is why the guardian angel (if present) should almost always guard the detective.</dd>
+      <dt>Guardian angel (17 players)</dt>
+      <dd>The Guardian angel is roughly the opposite of the harlot; rather than escaping attack, they protect other players. Guardian angels can still be killed by Werewolves in the normal way, as well as having a 50% chance of dying if they choose to 
+guard a werewolf. Their true identity will not be revealed to the person that is guarding them. As there's a 50% chance of the Guardian angel living after guarding a wolf, it is useless to claim GA-safe.</dd>
     </dl>
     <h3>Werewolf roles</h3>
     <p>There are three different werewolf roles that are assigned based on the player count. They are as follows:</p>
@@ -53,9 +65,12 @@
         At night, the wolves can communicate with each other through the wolfchat and decide who they are going to target. The night ends when all wolves agree on one target; otherwise, the target with most votes is targeted.
       </dd>
       <dt>Traitor (8-players)</dt>
-      <dd>The traitor is a werewolf role that appears in games with 8 players or more. The traitor has an important role in that they appear to be a normal villager until all other werewolves have died. This ensures "half-safes" aren't completely safe as they could be a traitor. Whereas the seer (see above) sees the traitor as a villager, the traitor can still be cursed (see above) and therefore be seen as wolf. Also, the detective (see above) can ID the true role of a traitor.</dd>
+      <dd>The traitor is a werewolf role that appears in games with 8 players or more. The traitor has an important role in that they appear to be a normal villager until all other werewolves have died. This ensures "half-safes" aren't completely safe as 
+they could be a traitor. Whereas the seer (see above) sees the traitor as a villager, the traitor can still be cursed (see above) and therefore be seen as wolf. Also, the detective (see above) can ID the true role of a traitor.</dd>
       <dt>Werecrow (12-players)</dt>
-      <dd>The werecrow is basically a normal wolf, but they can also choose to "observe" during nighttime. This means they will turn into a crow and observe a chosen target. When the night ends, the werecrow is informed of whether the target was sleeping, or if they were out from bed, which means they have a nightrole. However, note that werecrow can observe OR kill, which means that they shoul kill instead of observe if all wolves are dead. Once the make their decision, there is no turning back. A werecrow is seen as a wolf to the seer.</dd>
+      <dd>The werecrow is basically a normal wolf, but they can also choose to "observe" during nighttime. This means they will turn into a crow and observe a chosen target. When the night ends, the werecrow is informed of whether the target was sleeping, 
+or if they were out from bed, which means they have a nightrole. However, note that werecrow can observe OR kill, which means that they shoul kill instead of observe if all wolves are dead. Once the make their decision, there is no turning back. A 
+werecrow is seen as a wolf to the seer.</dd>
     </dl>
     <div class="container">
       <p class="text-muted credit">
