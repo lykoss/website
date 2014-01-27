@@ -16,6 +16,37 @@
     <br />
     <p>The following is a list of commands in Werewolf.</p>
     <br />
+    <h3>General commands</h3>
+    <table class="table table-bordered table-hover table-striped sortable">
+      <tr style="cursor: pointer">
+        <th>Command</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>!away</td>
+        <td>Sets you as !away so the bot doesn't ping you. Stores your cloak, not nick.</td>
+      </tr>
+      <tr>
+        <td>!back</td>
+        <td>Removes you from the away list. </td>
+      </tr>
+      <tr>
+        <td>!simple</td>
+        <td>Allows for messages to be recieved as notice. If you have already set this, then setting it again will revert messages to privmsgs.</td>
+      </tr>
+      <tr>
+        <td>/msg lykos !away</td>
+        <td>See !away</td>
+      </tr>
+      <tr>
+        <td>/msg lykos !simple</td>
+        <td>See !simple</td>
+      </tr>
+      <tr>
+        <td>/msg lykos !simple</td>
+        <td>See !simple</td>
+      </tr>
+    </table>
     <h3>Before a game</h3>
     <table class="table table-bordered table-hover table-striped sortable">
       <tr style="cursor: pointer">
@@ -24,7 +55,7 @@
       </tr>
       <tr>
         <td>!ping</td>
-        <td>Pings everyone to get their attention. This list excludes users who are away. (please don't manually ping users)</td>
+        <td>Pings everyone to get their attention. This list excludes users who have set !away or /away. (please don't manually ping users)</td>
       </tr>
       <tr>
         <td>!wait</td>
@@ -38,6 +69,10 @@
         <td>!quit or !leave</td>
         <td>Makes you leave the game and not be stasised.</td>
       </tr>
+      <tr>
+        <td>!start</td>
+        <td>Starts the game</td>
+      </tr> 
     </table>
     <h3>During a game</h3>
     <table class="table table-bordered table-hover table-striped sortable">
@@ -119,7 +154,7 @@
     <footer>
       <div class="container">
         <p class="text-muted credit">
-          <a href="https://github.com/werewolfirc/website/commits/master/htdocs/commands.html">Last updated</a> at 13:08 on Sun, Jan 27 2014 UTC
+          <a href="https://github.com/werewolfirc/website/commits/master/htdocs/commands.html">Last updated</a> at 13:28 on Sun, Jan 27 2014 UTC
         </p>
       </div>
     </footer>
