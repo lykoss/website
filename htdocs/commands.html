@@ -35,20 +35,50 @@
 		      <td>Join a game.</td>
 		    </tr>
 		  </table>
+		  <h3>During a game</h3>
+		  <table class="table table-bordered table-hover table-striped sortable">
+		    <tr style="cursor: pointer">
+		      <th>Command</th>
+		      <th>Function</th>
+		    </tr>
+		    <tr>
+		      <th>!roles</th>
+		      <th>Lists all roles. Roles playing in the current game are prefixed by a bold character.</th>
+		    </tr>
+		    <tr>
+		      <th>!stats</th>
+		      <th>Lists alive players and roles as well as the game status (day or night).</th>
+		    </tr>
+		    <tr>
+		      <th>!lynch</th>
+		      <th>Votes to lynch a player</th>
+		    </tr>
+		  </table>
+		  <h3>Role commands</h3>
+		  <table class="table table-bordered table-hover table-striped sortable">
+		    <tr style="cursor: pointer">
+		      <th>Command</th>
+		      <th>Role</th>
+		      <th>Function</th>
+		    </tr>
+		    <tr>
+		      <th>/msg lykos kill <em>target</em></th>
+		      <th>Wolf, werecrow</th>
+		      <th>Votes to kill <em>target</em>.</th>
+		    </tr>
+		    <tr>
+		      <th>/msg lykos see <em>target</em></th>
+		      <th>Seer</th>
+		      <th>Discover the role of <em>target</em> (can only be used once every night).</th>
+		    </tr>
+		    <tr>
+		      <th>/msg lykos visit <em>target</em></th>
+		      <th>Harlot</th>
+		      <th>Visits <em>target</em> at night.</th>
+		    </tr>
+		  </table>
                   <div class="container">
                           <div><h1>Wolfgame Commands</h1>
-                          <h2>General Commands (pregame)</h2>
-                          <dl class="compact short">
-                            <dt>!ping</dt> <dd>Ping everyone to get their attention (done by the bot. do not manually do this)</dd>
-                            <dt>!wait</dt> <dd>Delay start of a werewolf game.</dd>
-                            <dt>!join</dt> <dd>Join a werewolf game.</dd>
-                          </dl>
-                          <h2>General Commands (during game)</h2>
-                          <dl class="compact short">
-                            <dt>!roles</dt> <dd>Display roles during a werewolf game.</dd>
-                            <dt>!lynch</dt> <dd>Vote to lynch someone during the day in a werewolf game.</dd>
-                            <dt>!votes</dt> <dd>Display current votes.</dd>
-                          </dl>
                           <h2>Role-Specific Commands</h2>
                           <dl class="compact medium">
                             <dt>/MSG lykos kill</dt> <dd>Kill someone (wolf).</dd>
