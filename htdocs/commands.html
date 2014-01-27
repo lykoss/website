@@ -1,118 +1,128 @@
 <!DOCTYPE HTML>
 <html>
-        <head>
-              <meta charset="UTF-8" />
-              <title>##werewolf on freenode - commands</title>
-        <link rel="stylesheet" href="bootstrap.css">
-              <link rel="stylesheet" href="main.css">
-          </head>
-          <body style="padding-top:60px;">
-              <div class="container">
-                  <div class="navbar navbar-inverse navbar-fixed-top">
-                      <div class="container">
-                          <a class="navbar-brand" href="/index">Home</a> <a class="navbar-brand" href="/ops">List of ops</a>
-                      </div>
-                  </div>
-                  <br />
-                  <p>The following is a list of commands in Werewolf.</p>
-                  <br />
-                  <h3>Before a game</h3>
-                  <table class="table table-bordered table-hover table-striped sortable">
-		    <tr style="cursor: pointer">
-		      <th>Command</th>
-		      <th>Function</th>
-		    </tr>
-		    <tr>
-		      <td>!ping</td>
-		      <td>Pings everyone to get their attention. This list excludes users who are away. (please don't manually ping users)</td>
-		    </tr>
-		     <tr>
-		      <td>!wait</td>
-		      <td>Delays the start of a game with 20 seconds. Can only be used 3 times per game.</td>
-		    </tr>
-		    <tr>
-		      <td>!join</td>
-		      <td>Join a game.</td>
-		    </tr>
-		    <tr>
-		      <td>!quit or !leave</td>
-		      <td>Makes you leave the game and not be stasised.</td>
-		    </tr>
-		  </table>
-		  <h3>During a game</h3>
-		  <table class="table table-bordered table-hover table-striped sortable">
-		    <tr style="cursor: pointer">
-		      <th>Command</th>
-		      <th>Function</th>
-		    </tr>
-		    <tr>
-		      <td>!roles</td>
-		      <td>Lists all roles. Roles playing in the current game are prefixed by a bold character.</td>
-		    </tr>
-		    <tr>
-		      <td>!stats</td>
-		      <td>Lists alive players and roles as well as the game status (day or night).</td>
-		    </tr>
-		    <tr>
-		      <td>!lynch &lt;player&gt; or !vote &lt;player&gt;</td>
-		      <td>Votes to lynch a player</td>
-		    </tr>
-		  </table>
-		  <h3>Role commands</h3>
-		  <table class="table table-bordered table-hover table-striped sortable">
-		    <tr style="cursor: pointer">
-		      <th>Command</th>
-		      <th>Role</th>
-		      <th>Day/night</th>
-		      <th>Function</th>
-		    </tr>
-		    <tr>
-		      <td>/msg lykos kill <em>target</em></td>
-		      <td>Wolf, werecrow</td>
-		      <td>Night</td>
-		      <td>Votes to kill <em>target</em>.</td>
-		    </tr>
-		    <tr>
-		      <td>/msg lykos see <em>target</em></td>
-		      <td>Seer</td>
-		      <td>Night</td>
-		      <td>Discover the role of <em>target</em> (can only be used once every night).</td>
-		    </tr>
-		    <tr>
-		      <td>/msg lykos visit <em>target</em></td>
-		      <td>Harlot</td>
-		      <td>Night</td>
-		      <td>Visits <em>target</em> at night.</td>
-		    </tr>
-		    <tr>
-		      <td>/msg lykos observe <em>target</em></td>
-		      <td>Werecrow</td>
-		      <td>Night</td>
-		      <td>Observes <em>target</em>. At the end of the night, the werecrow is informed whether <em>target</em> was sleeping or not.</td>
-		    </tr>
-		    <tr>
-		      <td>/msg lykos id <em>target</em></td>
-		      <td>Detective</td>
-		      <td>Day</td>
-		      <td>Investigates the role of <em>target</em> and returns results immediately.</td>
-		    </tr>
-		    <tr>
-		      <td>/msg lykos guard <em>target</em></td>
-		      <td>Guardian angel</td>
-		      <td>Night</td>
-		      <td>Guards a player from the wolves.</td>
-		    </tr>
-		    <tr>
-		      <td>!shoot <em>target</em></td>
-		      <td>Gunner</td>
-		      <td>Day</td>
-		      <td>Shoots <em>target</em>.</td>
-		    </tr>
-		  </table>
-                <footer>
-            <div class="container">
-                <p class="text-muted credit"><a href="https://github.com/werewolfirc/website/commits/master/htdocs/commands.html">Last updated</a> at 15:35 UTC on Sun, Jan 5 2014</p>
-            </div>
-        </footer>
-        </body>
+<head>
+<meta charset="UTF-8" />
+<title>##werewolf on freenode - commands</title>
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body style="padding-top: 60px;">
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/index">Home</a> <a class="navbar-brand" href="/ops">List of ops</a>
+      </div>
+    </div>
+    <br />
+    <p>The following is a list of commands in Werewolf.</p>
+    <br />
+    <h3>Before a game</h3>
+    <table class="table table-bordered table-hover table-striped sortable">
+      <tr style="cursor: pointer">
+        <th>Command</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>!ping</td>
+        <td>Pings everyone to get their attention. This list excludes users who are away. (please don't manually ping users)</td>
+      </tr>
+      <tr>
+        <td>!wait</td>
+        <td>Delays the start of a game with 20 seconds. Can only be used 3 times per game.</td>
+      </tr>
+      <tr>
+        <td>!join</td>
+        <td>Join a game.</td>
+      </tr>
+      <tr>
+        <td>!quit or !leave</td>
+        <td>Makes you leave the game and not be stasised.</td>
+      </tr>
+    </table>
+    <h3>During a game</h3>
+    <table class="table table-bordered table-hover table-striped sortable">
+      <tr style="cursor: pointer">
+        <th>Command</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>!roles</td>
+        <td>Lists all roles. Roles playing in the current game are prefixed by a bold character.</td>
+      </tr>
+      <tr>
+        <td>!stats</td>
+        <td>Lists alive players and roles as well as the game status (day or night).</td>
+      </tr>
+      <tr>
+        <td>!lynch &lt;player&gt; or !vote &lt;player&gt;</td>
+        <td>Votes to lynch a player</td>
+      </tr>
+    </table>
+    <h3>Role commands</h3>
+    <table class="table table-bordered table-hover table-striped sortable">
+      <tr style="cursor: pointer">
+        <th>Command</th>
+        <th>Role</th>
+        <th>Day/night</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>/msg lykos kill <em>target</em></td>
+        <td>Wolf, werecrow</td>
+        <td>Night</td>
+        <td>Votes to kill <em>target</em>.
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos see <em>target</em></td>
+        <td>Seer</td>
+        <td>Night</td>
+        <td>Discover the role of <em>target</em> (can only be used once every night).
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos visit <em>target</em></td>
+        <td>Harlot</td>
+        <td>Night</td>
+        <td>Visits <em>target</em> at night.
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos observe <em>target</em></td>
+        <td>Werecrow</td>
+        <td>Night</td>
+        <td>Observes <em>target</em>. At the end of the night, the werecrow is informed whether <em>target</em> was sleeping or not.
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos id <em>target</em></td>
+        <td>Detective</td>
+        <td>Day</td>
+        <td>Investigates the role of <em>target</em> and returns results immediately.
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos guard <em>target</em></td>
+        <td>Guardian angel</td>
+        <td>Night</td>
+        <td>Guards a player from the wolves.</td>
+      </tr>
+      <tr>
+        <td>!shoot <em>target</em></td>
+        <td>Gunner</td>
+        <td>Day</td>
+        <td>Shoots <em>target</em>.
+        </td>
+      </tr>
+    </table>
+
+    <footer>
+      <div class="container">
+        <p class="text-muted credit">
+          <a href="https://github.com/werewolfirc/website/commits/master/htdocs/commands.html">Last updated</a> at 15:35 UTC on Sun, Jan 5 2014
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
