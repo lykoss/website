@@ -1,161 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+<meta charset="utf-8">
 
-    <title>Commands &middot; ##werewolf &ndash; freenode</title>
+<title>Commands &middot; ##werewolf &ndash; freenode</title>
 
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body style="padding-top: 60px">
-    <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="/index">Home</a> <a class="navbar-brand" href="/ops">List of ops</a>
-        </div>
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body style="padding-top: 60px">
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/index">Home</a> <a class="navbar-brand" href="/ops">List of ops</a>
       </div>
-      <br>
-      <p>The following is a list of commands in Werewolf.</p>
-      <br>
-      <h3>General commands</h3>
-      <table class="table table-bordered table-hover table-striped sortable">
-        <tr style="cursor: pointer">
-          <th>Command</th>
-          <th>Function</th>
-        </tr>
-        <tr>
-          <td>!away</td>
-          <td>Marks you as away so the bot doesn't ping you. Stores your cloak, not nick. Can be done in the channel or private message.</td>
-        </tr>
-        <tr>
-          <td>!back</td>
-          <td>Removes you from the away list. </td>
-        </tr>
-        <tr>
-          <td>!simple</td>
-          <td>Allows for messages to be recieved as notice. If you have already set this, then setting it again will revert messages to privmsgs.</td>
-        </tr>
-        <tr>
-          <td>/msg lykos !simple</td>
-          <td>See !simple</td>
-        </tr>
-      </table>
-      <h3>Before a game</h3>
-      <table class="table table-bordered table-hover table-striped sortable">
-        <tr style="cursor: pointer">
-          <th>Command</th>
-          <th>Function</th>
-        </tr>
-        <tr>
-          <td>!ping</td>
-          <td>Pings everyone to get their attention. This list excludes users who have set !away or /away. (<a href="http://wolf.xnrand.com/rules">please don't manually ping users</a>)</td>
-        </tr>
-        <tr>
-          <td>!wait</td>
-          <td>Delays the start of a game with 20 seconds. Can only be used 3 times per game.</td>
-        </tr>
-        <tr>
-          <td>!join</td>
-          <td>Join the game.</td>
-        </tr>
-        <tr>
-          <td>!quit or !leave</td>
-          <td>Leave the game.</td>
-        </tr>
-        <tr>
-          <td>!start</td>
-          <td>Starts the game</td>
-        </tr> 
-      </table>
-      <h3>During a game</h3>
-      <table class="table table-bordered table-hover table-striped sortable">
-        <tr style="cursor: pointer">
-          <th>Command</th>
-          <th>Function</th>
-        </tr>
-        <tr>
-          <td>!roles</td>
-          <td>Lists all roles. Roles playing in the current game are prefixed by a bold character.</td>
-        </tr>
-        <tr>
-          <td>!myrole</td>
-          <td>Reminds you what role you are, in case you forget.</td>
-        </tr>
-        <tr>
-          <td>!stats</td>
-          <td>Lists alive players and roles as well as the game status (day or night).</td>
-        </tr>
-        <tr>
-          <td>!lynch <em>player</em> or !vote <em>player</em></td>
-          <td>Votes to lynch a player</td>
-        </tr>
-      </table>
-      <h3>Role commands</h3>
-      <table class="table table-bordered table-hover table-striped sortable">
-        <tr style="cursor: pointer">
-          <th>Command</th>
-          <th>Role</th>
-          <th>Day/night</th>
-          <th>Function</th>
-        </tr>
-        <tr>
-          <td>/msg lykos kill <em>target</em></td>
-          <td>Wolf, werecrow</td>
-          <td>Night</td>
-          <td>Votes to kill <em>target</em>.
-          </td>
-        </tr>
-        <tr>
-          <td>/msg lykos see <em>target</em></td>
-          <td>Seer</td>
-          <td>Night</td>
-          <td>Discover the role of <em>target</em> (can only be used once every night).
-          </td>
-        </tr>
-        <tr>
-          <td>/msg lykos visit <em>target</em></td>
-          <td>Harlot</td>
-          <td>Night</td>
-          <td>Visits <em>target</em> at night.
-          </td>
-        </tr>
-        <tr>
-          <td>/msg lykos observe <em>target</em></td>
-          <td>Werecrow</td>
-          <td>Night</td>
-          <td>Observes <em>target</em>. At the end of the night, the werecrow is informed whether <em>target</em> was sleeping or not.
-          </td>
-        </tr>
-        <tr>
-          <td>/msg lykos id <em>target</em></td>
-          <td>Detective</td>
-          <td>Day</td>
-          <td>Investigates the role of <em>target</em> and returns results immediately.
-          </td>
-        </tr>
-        <tr>
-          <td>/msg lykos guard <em>target</em></td>
-          <td>Guardian angel</td>
-          <td>Night</td>
-          <td>Guards a player from the wolves.</td>
-        </tr>
-        <tr>
-          <td>!shoot <em>target</em></td>
-          <td>Gunner</td>
-          <td>Day</td>
-          <td>Shoots <em>target</em>.
-          </td>
-        </tr>
-      </table>
-
-      <footer>
-        <div class="container">
-          <p class="text-muted credit">
-            <a href="https://github.com/lykoss/website/commits/master/htdocs/commands.html">Last updated</a> at 07:08 on Thu, May 8 2014 UTC
-          </p>
-        </div>
-      </footer>
     </div>
-  </body>
+    <br>
+    <p>The following is a list of commands in Werewolf.</p>
+    <br>
+    <h3>General commands</h3>
+    <table class="table table-bordered table-hover table-striped sortable">
+      <tr style="cursor: pointer">
+        <th>Command</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>!away</td>
+        <td>Marks you as away so the bot doesn't ping you. Stores your cloak, not nick. Can be done in the channel or private message.</td>
+      </tr>
+      <tr>
+        <td>!back</td>
+        <td>Removes you from the away list.</td>
+      </tr>
+      <tr>
+        <td>!simple</td>
+        <td>Allows for messages to be recieved as notice. If you have already set this, then setting it again will revert messages to privmsgs.</td>
+      </tr>
+      <tr>
+        <td>/msg lykos !simple</td>
+        <td>See !simple</td>
+      </tr>
+    </table>
+    <h3>Before a game</h3>
+    <table class="table table-bordered table-hover table-striped sortable">
+      <tr style="cursor: pointer">
+        <th>Command</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>!ping</td>
+        <td>Pings everyone to get their attention. This list excludes users who have set !away or /away. (<a href="http://wolf.xnrand.com/rules">please don't manually ping users</a>)
+        </td>
+      </tr>
+      <tr>
+        <td>!wait</td>
+        <td>Delays the start of a game with 20 seconds. Can only be used 3 times per game.</td>
+      </tr>
+      <tr>
+        <td>!join</td>
+        <td>Join the game.</td>
+      </tr>
+      <tr>
+        <td>!quit or !leave</td>
+        <td>Leave the game.</td>
+      </tr>
+      <tr>
+        <td>!start</td>
+        <td>Starts the game</td>
+      </tr>
+    </table>
+    <h3>During a game</h3>
+    <table class="table table-bordered table-hover table-striped sortable">
+      <tr style="cursor: pointer">
+        <th>Command</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>!roles</td>
+        <td>Lists all roles. Roles playing in the current game are prefixed by a bold character.</td>
+      </tr>
+      <tr>
+        <td>!myrole</td>
+        <td>Reminds you what role you are, in case you forget.</td>
+      </tr>
+      <tr>
+        <td>!stats</td>
+        <td>Lists alive players and roles as well as the game status (day or night).</td>
+      </tr>
+      <tr>
+        <td>!lynch <em>player</em> or !vote <em>player</em></td>
+        <td>Votes to lynch a player</td>
+      </tr>
+    </table>
+    <h3>Role commands</h3>
+    <table class="table table-bordered table-hover table-striped sortable">
+      <tr style="cursor: pointer">
+        <th>Command</th>
+        <th>Role</th>
+        <th>Day/night</th>
+        <th>Function</th>
+      </tr>
+      <tr>
+        <td>/msg lykos kill <em>target</em></td>
+        <td>Wolf, werecrow</td>
+        <td>Night</td>
+        <td>Votes to kill <em>target</em>.
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos see <em>target</em></td>
+        <td>Seer</td>
+        <td>Night</td>
+        <td>Discover the role of <em>target</em> (can only be used once every night).
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos visit <em>target</em></td>
+        <td>Harlot</td>
+        <td>Night</td>
+        <td>Visits <em>target</em> at night.
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos observe <em>target</em></td>
+        <td>Werecrow</td>
+        <td>Night</td>
+        <td>Observes <em>target</em>. At the end of the night, the werecrow is informed whether <em>target</em> was sleeping or not.
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos id <em>target</em></td>
+        <td>Detective</td>
+        <td>Day</td>
+        <td>Investigates the role of <em>target</em> and returns results immediately.
+        </td>
+      </tr>
+      <tr>
+        <td>/msg lykos guard <em>target</em></td>
+        <td>Guardian angel</td>
+        <td>Night</td>
+        <td>Guards a player from the wolves.</td>
+      </tr>
+      <tr>
+        <td>!shoot <em>target</em></td>
+        <td>Gunner</td>
+        <td>Day</td>
+        <td>Shoots <em>target</em>.
+        </td>
+      </tr>
+    </table>
+
+    <footer>
+      <div class="container">
+        <p class="text-muted credit">
+          <a href="https://github.com/lykoss/website/commits/master/htdocs/commands.html">Last updated</a> at 07:08 on Thu, May 8 2014 UTC
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
