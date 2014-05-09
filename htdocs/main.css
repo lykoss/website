@@ -60,9 +60,10 @@ span.invisible {
 }
 
 /* h1 h2 etc tags are not allowed inside a tags because they are block elements
- * and a is an inline element. This styling is to make div.h1 div.h2 etc look 
+ * and a is an inline element. This styling is to make span.h1 span.h2 etc look 
  * like booststrap's styling for h1 h2 etc */
 .h1,.h2,.h3 {
 	margin-top: 21px;
 	margin-bottom: 10.5px;
+	display: block;
 }
