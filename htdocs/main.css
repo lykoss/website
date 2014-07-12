@@ -88,17 +88,21 @@ body {
  
 .navbar-inverse {
 	background-color: #333333;
-	border-color: #000000;
+	border-color: #dddddd;
 }
  
 a {
-	color: #777777;
+	color: #777777 !important;
 }
  
 span[style="color: white"] { /* TODO: update the individual pages using style="color: white" to aavoid these kind of hacks */
-	color: #222222;
+	color: #222222 !important;
 }
  
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
-	background: #333333;
+	background: #333333 !important;
+}
+
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+	background: inherit !important;
 }
