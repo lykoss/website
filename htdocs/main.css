@@ -67,3 +67,38 @@ span.invisible {
 	margin-bottom: 10.5px;
 	display: block;
 }
+
+
+/* Fancy dark theme */
+body {
+	background: #222222;
+	color: #eeeeee;
+}
+ 
+.well {
+	background: #333333;
+	border-color: #000000;
+	transiton: background 1s;
+	-webkit-transition: background 0.5s;
+}
+ 
+.well:hover {
+	background: #444444;
+}
+ 
+.navbar-inverse {
+	background-color: #333333;
+	border-color: #000000;
+}
+ 
+a {
+	color: #777777;
+}
+ 
+span[style="color: white"] { /* TODO: update the individual pages using style="color: white" to aavoid these kind of hacks */
+	color: #222222;
+}
+ 
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+	background: #333333;
+}
