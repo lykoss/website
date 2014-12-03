@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /sandbox
+Disallow: /sandbox.html
+Disallow: /test.php
+Disallow: /test.shtml
+Disallow: /stats
+Disallow: /stats.html
+Disallow: /stats/
