@@ -1,4 +1,4 @@
-User-agent: *
+User-Agent: *
 Disallow: /sandbox
 Disallow: /sandbox.html
 Disallow: /test.php
