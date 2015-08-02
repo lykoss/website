@@ -68,13 +68,13 @@ span.invisible {
 	display: block;
 }
 
-.well:hover {
+.well-button:hover {
   background-color: #dcdcdc;
 }
 
-.well a,
-.well a:hover,
-.well a:focus {
+.well-button a,
+.well-button a:hover,
+.well-button a:focus {
   color: #007fff;
   text-decoration: none;
 }
