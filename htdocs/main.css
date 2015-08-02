@@ -67,3 +67,14 @@ span.invisible {
 	margin-bottom: 10.5px;
 	display: block;
 }
+
+.well:hover {
+  background-color: #dcdcdc;
+}
+
+.well a,
+.well a:hover,
+.well a:focus {
+  color: #007fff;
+  text-decoration: none;
+}
