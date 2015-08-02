@@ -67,3 +67,14 @@ span.invisible {
 	margin-bottom: 10.5px;
 	display: block;
 }
+
+.well-button:hover {
+  background-color: #dcdcdc;
+}
+
+.well-button a,
+.well-button a:hover,
+.well-button a:focus {
+  color: #007fff;
+  text-decoration: none;
+}
